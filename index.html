@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGMA-2K25 | Santhiram Engineering College</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script> <!-- For confetti -->
+    <style>
+        /* Reduce spacing and height */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .logo-container img {
+            width: 60px; /* Reduce logo size */
+            height: auto;
+            margin: 2px;
+        }
+
+        .college-details h1 {
+            font-size: 50px; /* Reduce main heading size */
+            margin: 5px 0;
+        }
+
+        .college-details p {
+            font-size: 13px; /* Reduce font size */
+            margin: 2px 0;
+        }
+
+        .video-section video {
+            width: 90%;
+            max-height: 500px; /* Limit video height */
+            display: block;
+            margin: 10px auto;
+        }
+
+        .event-section {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .event-image img {
+            width: 80%;
+            max-height: 200px; /* Reduce event image height */
+        }
+
+        .event-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .event-item {
+            width: 120px; /* Compress event items */
+            padding: 5px;
+        }
+
+        .about-stalls {
+            padding: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px 0;
+            font-size: 12px; /* Reduce footer text */
+        }
+
+        @media (max-width: 1024px) {  /* Adjusts for small laptops */
+            .logo-container {
+                margin-top: 120px; /* Pushes logos further down */
+            }
+        }
+        
+        @media (max-width: 768px) {  /* Adjusts for tablets & smaller screens */
+            nav {
+                position: fixed;
+                top: auto;
+                right: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 20px;
+                top: 0px;
+            }
+        
+            .logo-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 70px; /* Pushes logos further down */
+            }
+        
+            .logo-container img {
+                max-width: 100px;
+                height: auto;
+            }
+        }
+        nav a:hover {
+            color: white !important; /* Change text color on hover */
+            background: linear-gradient(45deg, #ff4500, #008080, #4B0082, #228B22); /* Gradient background */
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+            text-shadow: none;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        /* Add a slight scale effect */
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body style="background-color:rgb(255, 255, 255);">
+
+    <!-- Header Section -->
+    <header>
+        <div id="home">
+            <nav style="
+                position: fixed;
+                right: 10px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+                display: flex;
+                gap: 20px;
+                font-family: Arial, sans-serif;
+                z-index: 1000;
+                padding:10px;
+                transition: all 0.3s ease-in-out;">
+                
+                <a href="#home" style="
+                    color: #ff4500;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5);
+                    transition: all 0.3s ease-in-out;
+                    position: relative;">
+                    Home
+                </a>
+                
+                <a href="#depts" style="
+                    color: #008080;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 5px rgba(0, 128, 128, 0.5);
+                    transition: all 0.3s ease-in-out;
+                    position: relative;">
+                    Depts
+                </a>
+                
+                <a href="#events" style="
+                    color: #4B0082;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 5px rgba(75, 0, 130, 0.5);
+                    transition: all 0.3s ease-in-out;
+                    position: relative;">
+                    Events
+                </a>
+                
+                <a href="#footer" style="
+                    color: #228B22;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 5px rgba(34, 139, 34, 0.5);
+                    transition: all 0.3s ease-in-out;
+                    position: relative;">
+                    Contact
+                </a>
+            </nav>
+        </div>
+        
+        
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo 1">
+            <img src="logo1.jpg" alt="Logo 2">
+            <img src="logo2.jpg" alt="Logo 3">
+            <img src="JNTUA[1].jpg" alt="Logo 4">
+            <img src="logo4.jpg" alt="Logo 5">
+            <img src="nba-300x300-2[1].jpg" alt="Logo 6">
+            <img src="ISTE.jpg" alt="Logo 7">
+            <img src="Institution_of_Engineers.jpg.png" alt="Logo 8">
+            <img src="IETE.jpg" alt="Logo 9">
+            <img src="IEEE.jpg" alt="Logo 9">
+
+            
+        </div>
+
+     <!-- College Details -->
+<div class="college-details" style="text-align: center; font-family: 'Arial', sans-serif; line-height: 1.6;">
+    <h1 style="color:rgb(245, 4, 4); font-size: 36px; font-weight: bold; text-shadow: 3px 3px 6px rgba(67, 42, 42, 0.4), 0 0 25px rgba(255, 0, 0, 0.5);">
+        Santhiram Engineering College
+    </h1>
+    <p style="color: #1e88e5; font-size: 20px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; margin: 10px 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(30, 136, 229, 0.5);">
+        (AUTONOMOUS)
+    </p>
+    <p style="color: #43a047; font-size: 18px; font-weight: bold; margin: 10px 0; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 8px rgba(67, 160, 71, 0.5);">
+        Approved by AICTE: New Delhi, Permanently Affiliated to JNT University, Ananthapuramu.
+    </p>
+    <p style="color: #424242; font-size: 18px; font-weight: bold; margin: 10px 0; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);">
+        Accredited by NAAC (Grade-A), Accredited by NBA (ECE & CSE)
+    </p>
+    <p style="color: #d32f2f; font-size: 18px; font-weight: bold; text-decoration: underline; margin: 10px 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(211, 47, 47, 0.5);">
+        ISO 9001:2015 Certified Institution, 2(f) & 12(B) recognition by UGC Act, 1956
+    </p>
+    <p style="color: #0288d1; font-size: 18px; font-weight: bold; margin: 10px 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(2, 136, 209, 0.5);">
+        NH-40, Nandyal - 518501, A. P.
+    </p>
+    <p style="color: #388e3c; font-size: 20px; font-weight: bold; margin: 20px 0; text-transform: uppercase; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 15px rgba(56, 142, 60, 0.5);">
+        Welcome to SIGMA-2K25 Fest!
+    </p>
+</div>
+
+    </header>
+
+    <!-- Body Section -->
+    <main>
+        <!-- Video Section -->
+      <!-- Video Section -->
+<section class="video-section" style="position: relative; width: 100%; height: auto; overflow: hidden;">
+    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; filter: brightness(120%);">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);"></div>
+</section>
+
+
+<!-- Event Section -->
+<!-- Event Section -->
+<section class="event-section" style="padding: 50px 20px; background-color:rgb(234, 234, 245); text-align: center; position: relative; overflow: hidden;">
+    <h2 class="event-title" style="font-size: 48px; font-weight: bold; color: #0288d1; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 5px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);">
+        SIGMA-2K25 Event
+    </h2>
+    
+    <!-- Event Description -->
+    <div class="event-description" style="font-size: 20px; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto 40px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);">
+        <p style="font-weight: 600; color: #444;">SIGMA-2K25 is an annual fest that brings together the best minds in technology and creativity. This year, we offer a mix of technical and non-technical events, workshops, and challenges to enhance skills, network, and enjoy an unforgettable experience.</p>
+    </div>
+
+    <!-- Event Image with Animation -->
+    <div class="eve" style="overflow: hidden; position: relative; " >
+        <img src="event-image2.jpg" alt="Event Image" class="animated-frame" style="width: 100%; height: 100%;  animation: zoomIn 2s ease-in-out;">
+    </div>
+    
+</section>
+
+<!-- Add Animation CSS -->
+<style>
+    .animated-frame {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .animated-frame:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Keyframe for zoomIn effect */
+    @keyframes zoomIn {
+        0% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+</style>
+
+
+    <!-- Conducting Departments -->
+    <div class="conducting-departments" id="depts">
+        <h3>Event Conducted By</h3>
+        <div class="departments-container">
+            <!-- Department 1 -->
+            <div class="departments-container">
+                <!-- Department 1 -->
+                <div class="department-card">
+                    <h4 style="color: #1a237e; font-size: 22px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+                        Department of Electronics & Communication Engineering
+                    </h4>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.8; font-family: 'Arial', sans-serif; color: #424242;">
+                        Anticipating the significance of the electronics and wireless communication realistic role in the society, 
+                        industry and among the public, the Department of Electronics and Communication Engineering has been started 
+                        carrying up its rationale since 2007 concentrating and imparting electronic & technological solutions in to 
+                        the young minds of the Society. The Department was initially started with an intake of <span style="color: #d32f2f; font-weight: bold;">60 seats</span> 
+                        since the opportunities are stupendous and the increase in demand for the production of engineers it is upgraded 
+                        to <span style="color: #d32f2f; font-weight: bold;">90 seats</span> in 2008. The intake has increased further to 
+                        <span style="color: #d32f2f; font-weight: bold;">120</span> in the year 2009. Forecasting the tremendous growth & 
+                        opportunities in VLSI, the Department also started a Master of Technology (M. Tech) program in 
+                        <span style="color: #2e7d32; font-weight: bold;">VLSI System Design</span> with an intake of 
+                        <span style="color: #d32f2f; font-weight: bold;">18 seats</span>. The department received an 
+                        <span style="color:rgb(227, 136, 16); font-weight: bold; text-decoration: underline;">ISO 9001:2015 certification</span> for its qualitative functioning.
+                        The objectives of the department include: to produce quality engineers, indulge in research and promote the students 
+                        to be active in entrepreneurship. The faculty has been involved in teaching and research in the diverse aspects 
+                        such as <span style="color: #1976d2; font-style: italic;">Wireless Communications & Networking, Microelectronics and VLSI, Digital Image Processing, 
+                        and Antenna design</span>. The department has state of the art laboratories. 
+                        The department extends its unwavering support for the growth of every student fulfilling their dreams. The department 
+                        also extended its support to groom and nurture the qualities of teamwork, leadership, mutual understanding and co-ordination 
+                        providing exposure to public and executive communication. The department has received accreditation from the National Board 
+                        of Accreditation. The Department also established a Master of Technology (M. Tech) program in Embedded System Design in 
+                        the year 2023 with an intake of 18 seats. The Department of ECE has Sanctioned IDEA LAB with the worth of 1.1 cr in association with AICTE.
+                    </p>
+                </div>
+                
+                <!-- Department 2 -->
+                <div class="department-card">
+                    <h4 style="color: #1a237e; font-size: 22px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+                        Department of Basic Sciences
+                    </h4><br>
+                    <p style="text-align: justify; font-size: 16px; line-height: 1.8; font-family: 'Arial', sans-serif; color: #424242;">
+                        The Department of Humanities and Sciences came into existence in the year 
+                        <span style="color: #d32f2f; font-weight: bold;">2007</span> when the college was started. The department plays a vital role in grooming 
+                        the students in their basic knowledge of science and language, and its prime focus is to provide a conceptual base in 
+                        <span style="color: #1976d2; font-style: italic;">Basic Sciences</span> which form a foundation to the Engineering subjects. 
+                        It is instrumental in grooming the students into competent Engineers and individuals through training in 
+                        <span style="color: #388e3c; font-weight: bold;">Soft Skills</span>, to compete for global opportunities. In view of the rapid development 
+                        of knowledge and the technological changes, the department seeks to strengthen itself by integrating it with the 
+                        <span style="color: #388e3c; font-weight: bold;">engineering departments</span> for a productive knowledge base. 
+                        The department has been encouraging the conduct of workshops and seminars to enable the faculty to keep abreast of the 
+                        knowledge and methodologies in the respective fields of research.
+                        <br><br>
+                        The Department comprises of <span style="color: #d32f2f; font-weight: bold;">Mathematics</span>, 
+                        <span style="color: #1976d2; font-weight: bold;">Physics</span>, <span style="color: #388e3c; font-weight: bold;">Chemistry</span>, and 
+                        <span style="color: #0288d1; font-weight: bold;">English</span> and deals with <span style="color: #388e3c; font-style: italic;">Mathematics-I, Mathematics-II, Mathematics-III, Mathematical Methods, Probability & Statistics, 
+                        Mathematical Foundations of Computer Science, Advanced Engineering Mathematics, Computer Oriented Numerical Methods, Chemistry, 
+                        Environmental Studies, English, Business Communication skills and Soft skills training</span> programmes with emphasis on 
+                        <span style="color: #d32f2f; font-weight: bold;">personality development</span>. Being the supportive department, H&S plays a constructive role 
+                        in the development of the organization. The department is strengthened by Professors, Associate Professors in each subject of 
+                        <span style="color: #388e3c; font-weight: bold;">Mathematics, Physics, Chemistry</span>, and <span style="color: #0288d1; font-weight: bold;">English</span>.
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+
+<!-- CSS for Styling and Animations -->
+<style>
+    /* Event Title */
+    .event-title {
+        text-align: center;
+        font-size: 38px;
+        color: #ffcc00;
+        font-weight: bold;
+        animation: fadeIn 1s ease-in-out;
+        text-shadow: 2px 2px 10px rgba(25, 12, 3, 0.8);
+        font-family: 'Poppins', sans-serif;
+        text-align:justify;
+    }
+    
+    /* Event Description */
+    .event-description {
+        text-align: center;
+        font-size: 20px;
+        color: #222;
+        width: 85%;
+        animation: slideIn 1s ease-in-out;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    /* Animated Image Frame */
+   
+    
+    .animated-frame {
+        width: 100%;
+        max-width:70%;
+        height: auto;
+        max-height:500px;
+
+        border: 6px solid #ffcc00;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.4s ease-in-out, box-shadow 2s ease-in-out;
+    }
+    
+    .animated-frame:hover {
+        transform: scale(1.5);
+        box-shadow: 0px 0px 25px rgba(255, 102, 0, 0.8);
+    }
+    
+    /* Conducting Departments Section */
+    .conducting-departments {
+        text-align: center;
+        margin: 30px auto;
+    }
+    
+    .departments-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    
+    .department-card {
+        width: 100%;
+        max-width: 600px;
+        background: linear-gradient(135deg,rgb(254, 254, 255),rgb(203, 246, 255));
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        color: #ffffff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    .department-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0px 8px 20px rgba(147, 51, 234, 0.8);
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes slideIn {
+        from { transform: translateY(30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .event-title {
+            font-size: 28px;
+        }
+    
+        .event-description {
+            font-size: 18px;
+            width: 90%;
+        }
+    
+        .animated-frame {
+            width: 95%;
+        }
+    
+        .department-card {
+            max-width: 90%;
+        }
+    }
+</style>
+
+        <!-- Event Name and Details -->
+
+
+            <!-- Technical and Non-Technical Events Section -->
+<!-- Events Section -->
+<section class="events-section" id="events">
+    <h2 class="section-title">🎉 Explore Our Events 🎉</h2>
+
+    <div class="events-container">
+        <!-- Technical Events -->
+        <div class="event-category" style="padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 157, 0.1);">
+            <h3 style="color: #2f4f4f; font-size: 24px; font-weight: bold; text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">ECE - Dept Events</h3>
+            <ul class="event-list" style="list-style-type: none; padding: 0; margin-top: 15px; font-size: 18px; font-family: 'Arial', sans-serif; color: #333333; line-height: 1.6;">
+                <li style="font-size: 18px; color:rgb(3, 84, 150); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">👩‍🏫 Paper Presentation</li>
+                <li style="font-size: 18px; color:rgb(4, 93, 4); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">🚀 Start-Up Ideas</li>
+                <li style="font-size: 18px; color:rgb(201, 34, 4); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">💃 Dance Competition</li>
+                <li style="font-size: 18px; color:rgb(4, 136, 129); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">🧩 Puzzle Solving</li>
+                <li style="font-size: 18px; color:rgb(148, 84, 6); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">🕵️‍♂️ Treasure Hunt</li>
+            </ul>
+            <div class="more-details-container" style="text-align: center; margin-top: 20px;">
+                <button onclick="window.location.href='events.html'" style="padding: 10px 20px; font-size: 18px; color: white; background-color: #ff6347; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: background-color 0.3s;">
+                    More Details
+                </button>
+            </div>
+        </div>
+        
+        <!-- Non-Technical Events -->
+        <div class="event-category" style="padding: 20px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #2f4f4f; font-size: 24px; font-weight: bold; text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">Basic Science - Dept Events</h3>
+            <ul class="event-list" style="list-style-type: none; padding: 0; margin-top: 15px; font-size: 18px; font-family: 'Arial', sans-serif; color: #333333; line-height: 1.6;">
+                <li style="font-size: 18px; color:rgb(3, 84, 150); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">🧠 Quiz Competition</li>
+                <li style="font-size: 18px; color:rgb(4, 93, 4); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">🎨 Art & Creativity Contest</li>
+                <li style="font-size: 18px; color:rgb(201, 34, 4); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">👨‍🍳 Master Chef Challenge</li>
+                <li style="font-size: 18px; color:rgb(4, 136, 129); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">📸 Photography Challenge</li>
+                <li style="font-size: 18px; color:rgb(148, 84, 6); text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);">🥻 Fashion Show</li> 
+            </ul>
+            <div class="more-details-container" style="text-align: center; margin-top: 20px;">
+                <button onclick="window.location.href='eventsbs.html'" style="padding: 10px 20px; font-size: 18px; color: white; background-color: #ff6347; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: background-color 0.3s;">
+                    More Details
+                </button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <!-- More Details Button -->
+    
+</section>
+
+<!-- Confetti Falling Effect -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2"></script>
+<script>
+    window.onload = function() {
+        confetti({
+            particleCount: 150,
+            spread: 100,
+            origin: { y: 0.6 }
+        });
+    };
+</script>
+
+<!-- CSS for Styling & Animations -->
+<style>
+    /* Section Title */
+    .section-title {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        color: #ff4500;
+        margin-bottom: 20px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Events Container */
+    .events-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    /* Event Category (Technical & Non-Technical) */
+    .event-category {
+        width: 45%;
+        min-width: 300px;
+        padding: 15px;
+        border-radius: 15px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        animation: glowEffect 3s infinite alternate;
+    }
+
+    /* Dynamic Gradient Animation */
+    .event-category:nth-child(odd) {
+        background: linear-gradient(-45deg,rgb(255, 255, 255),rgb(170, 218, 175),rgb(234, 242, 212));
+        background-size: 300% 300%;
+        animation: gradientBG 4s ease infinite;
+    }
+
+    .event-category:nth-child(even) {
+        background: linear-gradient(-45deg,rgb(255, 255, 255),rgb(170, 218, 175),rgb(234, 242, 212));
+        background-size: 300% 300%;
+        animation: gradientBG 4s ease infinite;
+    }
+
+    /* Event List */
+    .event-list {
+        list-style-type: none;
+        padding: 0;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    /* Hover Effect on Event Names */
+    .event-list li {
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .event-list li:hover {
+        transform: scale(1.1);
+        color: yellow;
+        text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.7);
+    }
+
+    /* More Details Button */
+    .more-details-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .more-details-container button {
+        background: linear-gradient(45deg, #ff4500, #ffcc33);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 24px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0px 5px 15px rgba(255, 99, 71, 0.3);
+    }
+
+    .more-details-container button:hover {
+        background: linear-gradient(45deg, #ffcc33, #ff4500);
+        transform: scale(1.1);
+        box-shadow: 0px 10px 25px rgba(255, 99, 71, 0.5);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @keyframes glowEffect {
+        0% { box-shadow: 0px 0px 10px rgba(255, 204, 51, 0.4); }
+        100% { box-shadow: 0px 0px 25px rgba(255, 204, 51, 0.8); }
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .events-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .event-category {
+            width: 90%;
+        }
+    }
+</style>
+<!-- About Stalls Section -->
+<section class="about-stalls-section">
+    <h2 class="stalls-title">Explore Our Stalls</h2>
+    <div class="stalls-container">
+        
+        <!-- Stall 1 -->
+        <div class="stall-card">
+            <div class="stall-front">
+                <h4>Innovative Ideas</h4>
+                <p>Discover futuristic projects and prototypes.</p>
+            </div>
+            <div class="stall-back">
+                <p>Experience AI-driven solutions, IoT devices, and cutting-edge technology in action.</p>
+            </div>
+        </div>
+
+        <!-- Stall 2 -->
+        <div class="stall-card">
+            <div class="stall-front">
+                <h4>Gaming Zone</h4>
+                <p>Test your skills in various gaming challenges.</p>
+            </div>
+            <div class="stall-back">
+                <p>Compete in eSports tournaments and win exciting prizes!</p>
+            </div>
+        </div>
+
+        <!-- Stall 3 -->
+        <div class="stall-card">
+            <div class="stall-front">
+                <h4>Food & Fun</h4>
+                <p>Delicious food stalls with a variety of treats.</p>
+            </div>
+            <div class="stall-back">
+                <p>Enjoy mouthwatering snacks, beverages, and fun activities for all ages.</p>
+            </div>
+        </div>
+
+        <!-- Stall 4 -->
+        <div class="stall-card">
+            <div class="stall-front">
+                <h4>Startup Showcase</h4>
+                <p>Meet young entrepreneurs and their ventures.</p>
+            </div>
+            <div class="stall-back">
+                <p>Explore groundbreaking ideas and business models from emerging startups.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CSS for Stalls Section -->
+<style>
+    /* Section Title */
+    .stalls-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color:rgb(153, 42, 2);
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: fadeIn 1.5s ease-in-out;
+        text-shadow: 2px 2px 8px rgba(157, 0, 255, 0.7);
+    }
+
+    /* Stalls Container */
+    .stalls-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Stall Card (Flip Animation) */
+    .stall-card {
+        width: 270px;
+        height: 180px;
+        perspective: 1000px;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        margin-bottom: 20px;
+    }
+
+    .stall-card:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .stall-card:hover .stall-front {
+        transform: rotateY(180deg);
+    }
+
+    .stall-card:hover .stall-back {
+        transform: rotateY(0);
+    }
+
+    /* Stall Front & Back */
+    .stall-front,
+    .stall-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 8px rgba(255, 0, 43, 0.7);
+        transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .stall-front {
+        background: linear-gradient(45deg,#8cebc8,rgb(159, 221, 234));
+        color: white;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .stall-back {
+        background: linear-gradient(45deg, #333, #555);
+        color: white;
+        transform: rotateY(180deg);
+        padding: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Hover Glow Effect */
+    .stall-card:hover .stall-front {
+        box-shadow: 0px 0px 15px rgba(71, 218, 255, 0.8);
+    }
+
+    .stall-front h4 {
+        font-size: 22px;
+        font-weight: bold;
+        color:rgb(245, 75, 14);
+        text-shadow: 2px 2px 8px rgba(160, 145, 253, 0.7);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+    }
+
+    .stall-back p {
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 500;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .stalls-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stall-card {
+            width: 90%;
+            margin: 10px 0;
+        }
+
+        .stalls-title {
+            font-size: 28px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .stall-card {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .stall-title {
+            font-size: 24px;
+        }
+    }
+</style>
+<!-- Footer Section -->
+<footer class="footer" id="footer">
+    <head>
+        <!-- Font Awesome CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+    
+    <div class="footer-container">
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/SanthiramEngineeringCollege/" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://in.linkedin.com/school/santhiram-engineering-college-nandyal/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.srecnandyal.edu.in/" target="_blank" aria-label="Website">
+                <i class="fas fa-globe"></i>
+            </a>
+            <a href="https://x.com/srecnandyal23" target="_blank" aria-label="X (formerly Twitter)">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/srecndl/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        
+        <!-- Coordinators Section -->
+       <div class="footer-coordinators">
+    <div class="coordinator" style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #e74c3c; text-shadow: 1px 1px 3px rgba(231, 76, 60, 0.3); letter-spacing: 0.5px;">
+        <p><span style="font-weight: bold; font-size: 18px; color: #ffeb3b;">Chief Patron:</span> <br>Dr. M. Santhiramudu - Chairman</p>
+    </div>
+    <div class="coordinator" style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color:rgb(249, 251, 253); text-shadow: 1px 1px 3px rgba(52, 152, 219, 0.3); letter-spacing: 0.5px;">
+        <p><span style="font-weight: bold; font-size: 18px; color: #ffeb3b;">Patron:</span> <br>Mr. M. Sivaram - MD</p>
+    </div>
+    <div class="coordinator" style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #2ecc71; text-shadow: 1px 1px 3px rgba(46, 204, 113, 0.3); letter-spacing: 0.5px;">
+        <p><span style="font-weight: bold; font-size: 18px; color: #ffeb3b;">President:</span> <br style>Dr. M. V. Subramanyam - Principal</p>
+    </div>
+    <div class="coordinator" style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #f39c12; text-shadow: 1px 1px 3px rgba(243, 156, 18, 0.3); letter-spacing: 0.5px;">
+        <p><span style="font-weight: bold; font-size: 18px; color:  #ffeb3b;">Conveners:</span><br>
+            Dr. Y. Mallikarjuna Rao - HOD-ECE <br>📞 7013644144<br>
+            Dr. B. Seshaiah - HOD-BS<br>📞 9985091069
+        </p>
+    </div>
+    <div class="coordinator" style="text-align: center; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; color: #9b59b6; text-shadow: 1px 1px 3px rgba(155, 89, 182, 0.3); letter-spacing: 0.5px;">
+        <p><span style="font-weight: bold; font-size: 18px; color: #ffeb3b">Co-Conveners:</span><br>
+            Dr. G. Sowmya - ECE Dept <br>📞 9441401197<br>
+            Dr. B. Haritha - BS Dept <br>📞 7013539396
+        </p>
+    </div>
+</div>
+
+
+        <!-- College Address -->
+        <div style="text-align: center; color:rgb(163, 208, 246); font-size: 18px; font-weight: bold; margin-top: 20px; font-family: 'Poppins', sans-serif;">
+            <p><i style="color:rgb(87, 184, 202); font-size: 22px; margin-right: 5px;" class="fas fa-map-marker-alt"></i> 
+                <strong>Santhiram Engineering College</strong><br>
+                NH-40, Nandyal - 518501, Andhra Pradesh, India.
+            </p>
+        </div>
+        
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>© 2025 SIGMA-2K25 | Santhiram Engineering College. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Footer CSS -->
+<style>
+    .footer {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+        box-shadow: 0px -5px 15px rgba(255, 99, 71, 0.2);
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .social-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #ff4500;
+        color: white;
+        font-size: 18px;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+        background: #ffcc33;
+        box-shadow: 0px 0px 10px rgba(255, 204, 51, 0.7);
+    }
+
+    .footer-coordinators {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .coordinator p, .footer-address p {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 12px;
+        border-radius: 8px;
+        color: #ccc;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .coordinator span, .footer-address span {
+        font-weight: bold;
+        color: #ffcc33;
+    }
+
+    .footer-address {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 10px;
+        color: #999;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer-coordinators {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer-address {
+            text-align: center;
+        }
+    }
+
+    .footer a {
+        text-decoration: none;
+    }
+</style>
+
+<footer>
+    <marquee style="
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc33;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(255, 204, 51, 0.5);
+    background: linear-gradient(to right, #000000, #222222);
+    padding: 10px;
+    border-top: 2px solidrgb(230, 0, 255);
+    letter-spacing: 1px;
+    animation: glow 1.5s infinite alternate;
+    " scrollamount="10" behavior="scroll" direction="left">
+    Website Designed & Developed by: <span style="color:rgb(0, 255, 221); text-decoration: underline;">S FAYAZ  </span> (CSG - 21X51A3833)  |
+    <span style="color: #33ff57; text-decoration: underline;">K Vamsi </span>(ECE - 21X51A0448)  | 
+    <span style="color:rgb(171, 246, 250); text-decoration: underline;"> S Lal Basha</span>  (CSG)  | 
+    </marquee>
+    <style>
+    @keyframes glow {
+    0% { text-shadow: 0 0 5px #ffcc33, 0 0 10px #ffcc33; }
+    100% { text-shadow: 0 0 10px #ff4500, 0 0 15px #ff4500; }
+    }
+    </style>
+        </footer>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- JavaScript for Animations, Smooth Scrolling, and Confetti -->
+    <script src="scripts.js"></script>
+    <!-- Trigger confetti when page loads -->
+    <script>
+        window.onload = function () {
+            confetti({
+                particleCount: 200,
+                spread: 90,
+                origin: { x: 0.5, y: 0.5 }
+            });
+        };
+    </script>
+</body>
+</html>
+                                               

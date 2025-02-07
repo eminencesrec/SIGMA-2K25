@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGMA-2K25 Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="events.css"/>
+</head>
+<body>
+    <div class="container">
+        <nav style="
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        background: white;
+        padding: 12px 25px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 20px;
+        font-family: Arial, sans-serif;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;">
+        
+        <a href="index.html" style="
+            color: #ff4500;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+            position: relative;">
+            Home
+        </a>
+        
+        <a href="events.html" style="
+            color: #008080;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 128, 128, 0.5);
+            transition: all 0.3s ease-in-out;
+            position: relative;">
+            ECE
+        </a>
+        
+        <a href="#Technical-Events" style="
+            color: #4B0082;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(75, 0, 130, 0.5);
+            transition: all 0.3s ease-in-out;
+            position: relative;">
+            Technical Events
+        </a>
+        
+        <a href="#Non-Technical-Events" style="
+            color: #228B22;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(34, 139, 34, 0.5);
+            transition: all 0.3s ease-in-out;
+            position: relative;">
+            Arts & Cultural Events
+        </a>
+    </nav>
+    <h1 class="animated-heading">Basic Science - Dept Events</h1>
+
+    <style>
+      /* Animated Heading Styles */
+      .animated-heading {
+        font-size: 3rem; /* Large font size */
+        font-weight: bold; /* Bold text */
+        background: linear-gradient(45deg, #ff6a00, #ffcc00, #ff00cc, #00bfff); /* Gradient color effect */
+        background-clip: text; /* Makes the background color apply to the text */
+        -webkit-background-clip: text; /* For webkit browsers */
+        color:rgb(235, 228, 21); /* Makes text color transparent to show gradient */
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3), 0 0 25px rgb(7, 1, 41), 0 0 5px rgb(52, 63, 128); /* Text shadow for lighting effect */
+        animation: glowr 1s ease-in-out infinite alternate; /* Animation for glowing effect */
+      }
+    
+      /* Keyframes for glowing animation */
+      @keyframes glowr {
+        0% {
+          text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 15px #ff0099, 0 0 5px #ff0099;
+        }
+        50% {
+          text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 20px #ff00ff, 0 0 10px #ff00ff;
+        }
+        100% {
+          text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 25px #ff0099, 0 0 5px #ff0099;
+        }
+      }  
+    </style>
+            <div style="width: 100%; overflow: hidden; position: relative; background-color: #f1f1f1; padding: 20px 0;">
+            <div style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 10px; cursor: pointer; font-size: 20px; border-radius: 50%; z-index: 10; left: 10px;" onclick="scrollImages('left')">←</div>
+            <div class="scroll-wrapper" style="display: flex; transition: transform 2s ease-in-out;">
+                <img src="bs-posters\home.jpg" alt="Image 1" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\xpo.jpg" alt="Image 3" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\idea.jpg" alt="Image 3" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\quiz.jpg" alt="Image 2" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\dance.jpg" alt="Image 4" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\camera.jpg" alt="Image 5" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\singing.jpg" alt="Image 5" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+
+                <img src="bs-posters\standup.jpg" alt="Image 10" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\photo.jpg" alt="Image 6" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\mind.jpg" alt="Image 7" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\cooking.jpg" alt="Image 9" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\henna.jpg" alt="Image 10" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+                <img src="bs-posters\fashion.jpg" alt="Image 10" style="height: 350px; width: auto; object-fit: cover; border-radius: 10px; margin-right: 10px;">
+
+            </div>
+            <div style="position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 10px; cursor: pointer; font-size: 20px; border-radius: 50%; z-index: 10; right: 10px;" onclick="scrollImages('right')">→</div>
+        </div>
+        <div class="section" id="Technical-Events">
+            <h2 class="animated-head">Technical Events</h2>
+
+            <style>
+              /* Animated Heading Styles */
+              .animated-head {
+                font-size: 2.5rem; /* Font size */
+                font-weight: bold; /* Bold text */
+                color:rgb(34, 152, 89);/* Default text color */
+                background: linear-gradient(45deg, #ff6a00, #ff00cc, #00bfff); /* Gradient background */
+                background-clip: text; /* Apply gradient to text */
+                -webkit-background-clip: text; /* For webkit browsers */
+                text-fill-color: transparent; /* Make text color transparent to reveal gradient */
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), 0 0 25px rgb(218, 22, 25), 0 0 5px rgb(52, 63, 128); /* Text shadow for lighting effect */
+
+                animation: glows 1.5s ease-in-out infinite alternate; /* Animation for glowing effect */
+              }
+            
+              /* Keyframes for glowing animation */
+              @keyframes glows {
+                0% {
+                  text-shadow: 
+                    2px 2px 0 #000, 
+                    0 0 10px rgba(0, 0, 0, 0.4), 
+                    0 0 20px #ff00ff, 
+                 
+                }
+                50% {
+                  text-shadow: 
+                    3px 3px 0 #000, 
+                    0 0 15px rgba(0, 0, 0, 0.5), 
+                    0 0 30px #ff00ff, 
+                   
+                }
+                100% {
+                  text-shadow: 
+                    2px 2px 0 #000, 
+                    0 0 10px rgba(0, 0, 0, 0.4), 
+                    0 0 20px #ff00ff, 
+                  
+                }
+              }
+            </style>   
+
+            <div class="event-grid" >
+                <div class="event-card" style="width:400px">
+                    <img src="event-images/ppt.gif" alt="Hackathon">
+                    <h3>Tech Xplore (Paper Presentation) </h3>
+                    <p>Join the ultimate coding battle!</p>
+                    <a href="https://forms.gle/UbKtLsDYYQjEzd94A"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card" style="width:400px">
+                    <img src="event-images/start-up.gif" alt="Start-Up Ideas">
+                    <h3>Bussiness Events - Ideathon </h3>
+                    <p>Innovate, create, and bring your entrepreneurial vision to life.</p>
+                    <a href="https://forms.gle/SYmqggZgMu4oTVWk8"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card" style="width:400px">
+                    <img src="event-images/ai-workshop.gif" alt="Technical Quiz">
+                    <h3>Technical Quiz</h3>
+                    <p>Test your tech knowledge and challenge your mind.</p>
+                    <a href="https://forms.gle/ZEWXSGTFL9PkCavw5"><button class="register-btn">Register</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="Non-Technical-Events">
+            <h2 class="animated-head">Arts & Cultural Events</h2>
+
+            <style>
+              /* Animated Heading Styles */
+              .animated-head {
+                font-size: 2.5rem; /* Font size */
+                font-weight: bold; /* Bold text */
+                color:rgb(97, 228, 158);/* Default text color */
+                background: linear-gradient(45deg, #ff6a00, #ff00cc, #00bfff); /* Gradient background */
+                background-clip: text; /* Apply gradient to text */
+                -webkit-background-clip: text; /* For webkit browsers */
+                text-fill-color: transparent; /* Make text color transparent to reveal gradient */
+              
+                animation: glows 1.5s ease-in-out infinite alternate; /* Animation for glowing effect */
+              }
+            
+              /* Keyframes for glowing animation */
+              @keyframes glows {
+                0% {
+                  text-shadow: 
+                    2px 2px 0 #000, 
+                    0 0 10px rgba(0, 0, 0, 0.4), 
+                    0 0 20px #ff00ff, 
+                  
+                }
+                50% {
+                  text-shadow: 
+                    3px 3px 0 #000, 
+                    0 0 15px rgba(0, 0, 0, 0.5), 
+                    0 0 30px rgb(144, 0, 255), 
+                    0 0 40px #ff00ff;
+                }
+                100% {
+                  text-shadow: 
+                    2px 2px 0 #000, 
+                    0 0 10px rgba(0, 0, 0, 0.4), 
+                    0 0 20px #ff00ff, 
+                    0 0 30px rgb(144, 0, 255), 
+                    0 0 40px #ff00ff;
+                }
+              }
+            </style>   
+            <div class="event-grid">
+                <div class="event-card">
+                    <img src="event-images/dance.gif" alt="Step Sync (Dance Competition)">
+                    <h3>Step Sync (Dance Competition)</h3>
+                    <p>Dance to the rhythm and showcase your moves.</p>
+                    <a href="https://forms.gle/koUHBksqDZQq6w4f8"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card">
+                    <img src="event-images/comedy.gif" alt="Standup Comedy/Mimicry">
+                    <h3>Standup Comedy/ Mimicry</h3>
+                    <p>Bring on the laughs and the best impressions.</p>
+                    <a href="https://forms.gle/V2wMWxuqAVvWFGaM7"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card">
+                    <img src="event-images/singing.gif" alt="Melody Marvel">
+                    <h3>Melody Marvel (Singing Competition)</h3>
+                    <p>Sing, perform, and create a magical melody.</p>
+                    <a href="https://forms.gle/DK2tBAxgLQoUcPhNA"><button class="register-btn">Register</button></a>
+                </div>
+
+                <div class="event-card">
+                    <img src="event-images/photos.gif" alt="Flashy Focus">
+                    <h3>Flashy Focus (Photography)</h3>
+                    <p>A spotlight on creativity through a lens of style.</p>
+                    <a href="https://forms.gle/xQjHmJuZvgPuMqT79"><button class="register-btn">Register</button></a>
+                </div>
+              </div>
+              <div class="event-grid">              
+                <div class="event-card">
+                    <img src="event-images/drawing.gif" alt="Trails of Secrets">
+                    <h3>Inno Stitches (Drawing Competition)</h3>
+                    <p>Creativity is the key to unlocking the secrets of imagination.</p>
+                    <a href="https://forms.gle/vVCWGSVMPZRahB7C7"><button class="register-btn">Register</button></a>
+                </div>
+
+                <div class="event-card">
+                    <img src="event-images/cooking.gif" alt="Master Chef Challenge">
+                    <h3>The Top Chef Competition (Cooking without Fire)</h3>
+                    <p>Cook and create culinary masterpieces.</p>
+                    <a href="https://forms.gle/XskJu7QJ7MD6NfuT8"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card">
+                    <img src="event-images/henna.gif" alt="Henna Hands Challenge">
+                    <h3>Mehandi Competition (Henna Happening)</h3>
+                    <p>Art in every stroke, beauty in every design.</p>
+                    <a href="https://forms.gle/tWV73U894vw2PxQC8"><button class="register-btn">Register</button></a>
+                </div>
+                <div class="event-card">
+                    <img src="event-images/fashion.gif" alt="Rampage Fashion Show">
+                    <h3>Rampage Fashion Show </h3>
+                    <p>Strut your stuff and let fashion take center stage.</p>
+                    <a href="https://forms.gle/RSMaFpUjDQ7JtMQQ7"><button class="register-btn">Register</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <marquee style="
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffcc33;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(255, 204, 51, 0.5);
+      background: linear-gradient(to right, #000000, #222222);
+      padding: 10px;
+      border-top: 2px solidrgb(230, 0, 255);
+      letter-spacing: 1px;
+      animation: glow 1.5s infinite alternate;
+      " scrollamount="10" behavior="scroll" direction="left">
+      Website Designed & Developed by: <span style="color:rgb(0, 255, 221); text-decoration: underline;">S FAYAZ  </span> (CSG - 21X51A3833)  |
+      <span style="color: #33ff57; text-decoration: underline;">K Vamsi </span>(ECE - 21X51A0448)  | 
+      <span style="color:rgb(171, 246, 250); text-decoration: underline;"> S Lal Basha</span>  (CSG)  | 
+      </marquee>
+      <style>
+      @keyframes glow {
+      0% { text-shadow: 0 0 5px #ffcc33, 0 0 10px #ffcc33; }
+      100% { text-shadow: 0 0 10px #ff4500, 0 0 15px #ff4500; }
+      }
+      </style>
+          </footer>
+  </body>
+<style>
+  /* Event Card Styling */
+ 
+  
+  .event-card {
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 15px;
+      text-align: center;
+      position: relative;
+      width: 300px;
+      height: 380px; /* Reduced height for less spacing */
+      margin: 5px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  /* Image Styling */
+  .event-card img {
+      width: 100%;
+      height: 180px; /* Slightly reduced fixed height */
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover img {
+      transform: scale(1.05);
+  }
+  
+  /* Heading Styling */
+  .event-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.7);
+  }
+  
+  /* Paragraph Styling */
+  .event-card p {
+      font-size: 14px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  /* Button Styling */
+  .register-btn {
+      background: linear-gradient(45deg, #ff4500, #ffcc33);
+      color: white;
+      font-size: 16px;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      font-family: 'Arial', sans-serif;
+      width: 90%;
+      text-align: center;
+      margin-top: auto; /* Ensures it sticks at the bottom */
+  }
+  
+  .register-btn:hover {
+      background: linear-gradient(45deg, #ffcc33, #ff4500);
+      transform: scale(1.05);
+  }
+  
+  .register-btn:active {
+      transform: scale(1);
+  }
+  .event-card:hover {
+      background: linear-gradient(135deg,rgb(97, 41, 4),rgb(67, 54, 14)); /* Smooth gradient */
+      transform: scale(1.05); /* Slight zoom-in */
+      box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6); /* Stronger glow effect */
+  }
+
+.event-card {
+    flex: 1 1 400px; /* Equal width for all cards */
+    max-width: 350px; /* Prevent cards from getting too large */
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+  .event-card {
+    max-width: 270px; /* Shrinks slightly for very small devices */
+  }
+}
+        @media (min-width: 320px) and (max-width: 720px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+
+  }
+}
+@media (min-width: 721px) and (max-width: 1040px) {
+  .event-card {
+    width: 270px; /* Slightly smaller to fit better */
+    grid-template-columns: repeat(2, 1fr); /* 1 card per row */
+
+  }
+}
+
+</style>
+<script>
+    const wrapper = document.querySelector('.scroll-wrapper');
+    let scrollAmount = 0;
+    const totalImages = wrapper.children.length / 2;
+
+    function scrollImages(direction) {
+        const imageWidth = wrapper.querySelector('img').offsetWidth + 10;
+        if (direction === 'right') {
+            scrollAmount += imageWidth;
+            if (scrollAmount >= wrapper.scrollWidth / 2) {
+                scrollAmount = 0;
+            }
+        } else if (direction === 'left') {
+            scrollAmount -= imageWidth;
+            if (scrollAmount < 0) {
+                scrollAmount = (wrapper.scrollWidth / 2) - imageWidth * totalImages;
+            }
+        }
+        wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+
+    setInterval(() => {
+        scrollImages('right');
+    }, 3000);
+</script>
+</html>

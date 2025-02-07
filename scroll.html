@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scroll with Loop</title>
+    <style>
+        /* Scroll Container */
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: #f1f1f1;
+            padding: 20px 0;
+        }
+
+        /* Scroll Wrapper (this holds the images) */
+        .scroll-wrapper {
+            display: flex;
+            transition: transform 2s ease-in-out;
+        }
+
+        /* Image Styling */
+        .scroll-wrapper img {
+            height: 250px;
+            width: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        /* Left & Right Buttons */
+        .scroll-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .left-button {
+            left: 10px;
+        }
+
+        .right-button {
+            right: 10px;
+        }
+
+        /* Hover Effects */
+        .scroll-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .scroll-wrapper img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="scroll-container">
+    <!-- Left Button -->
+    <div class="scroll-button left-button" onclick="scrollImages('left')">←</div>
+
+    <!-- Image Wrapper -->
+    <div class="scroll-wrapper">
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+        <!-- Duplicate Images for Looping -->
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+
+        <img src="event-image.jpg" alt="Image 1">
+    </div>
+
+    <!-- Right Button -->
+    <div class="scroll-button right-button" onclick="scrollImages('right')">→</div>
+</div>
+
+<script>
+    const wrapper = document.querySelector('.scroll-wrapper');
+    let scrollAmount = 0;
+    const totalImages = wrapper.children.length / 2;  // Total number of unique images (half due to duplication)
+
+    // Scroll the images left or right when the buttons are clicked
+    function scrollImages(direction) {
+        const imageWidth = wrapper.querySelector('img').offsetWidth + 10; // Image width + margin-right
+        if (direction === 'right') {
+            scrollAmount += imageWidth;
+            if (scrollAmount >= wrapper.scrollWidth / 2) {  // At the end, reset to start
+                scrollAmount = 0;
+            }
+        } else if (direction === 'left') {
+            scrollAmount -= imageWidth;
+            if (scrollAmount < 0) {  // If reached the beginning, reset to the last image
+                scrollAmount = (wrapper.scrollWidth / 2) - imageWidth * totalImages;
+            }
+        }
+        wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+
+    // Auto-scroll functionality (Optional)
+    setInterval(() => {
+        scrollImages('right');
+    }, 3000); // Auto-scroll every 3 seconds
+</script>
+
+</body>
+</html>

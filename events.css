@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e9bace, #87ceeb, #ffcc00);
+    color: black;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+.container {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+}
+h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+    color: white;
+}
+.section {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.event-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.event-card:hover {
+    transform: scale(1.05);
+    background: #f4f4f4;
+}
+.event-card img {
+    width: 100%;
+    height: 150px; /* Ensures all images have the same height */
+    object-fit: contain; /* Ensures the full image is visible without cropping */
+    border-radius: 10px;
+    background-color: white; /* Adds a background in case the image doesn't fill the box */
+    display: block;
+}
+
+
+.register-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff4500;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background: #ff6347;
+}
+nav a:hover {
+    color: white !important; /* Change text color on hover */
+    background: linear-gradient(45deg, #ff4500, #008080, #4B0082, #228B22); /* Gradient background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add a slight scale effect */
+nav a:hover {
+    transform: scale(1.1);
+}
+
