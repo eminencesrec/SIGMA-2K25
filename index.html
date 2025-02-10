@@ -242,6 +242,198 @@
     <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0);"></div>
 </section>
 
+<section class="info-section">
+    <div class="container">
+        <!-- About College Card -->
+        <div class="card animate-top">
+            <div class="image-container">
+                <img src="logo.jpg" alt="College Image" class="college-image">
+            </div>
+            <div class="text-container">
+                <h2 class="title">About SANTHIRAM ENGINEERING COLLEGE</h2>
+                <p class="description">
+                    Welcome to <b class="highlight">SANTHIRAM ENGINEERING COLLEGE</b>, Santhiram Engineering College (SREC) is sponsored by M/s Sri Shirdi Sai Educational
+                    Academy, Nandyal. SREC was established under the able guidance of Dr. M. Santhiramudu,
+                    Chairman, in the year <span class="highlight achievement">2007</span> with a noble motto “Education for Peace and Progress”. The
+                    college is ranked as one of the Best Engineering Colleges of JNTUA, Ananthapuramu. The
+                    institute has got permanent affiliation from JNTUA Anantapuramu. It has been conferred
+                    Autonomous status by UGC in <span class="highlight achievement">2023</span>. The institute has also got accredited by
+                    <span class="highlight achievement">NBA</span> and <span class="highlight achievement">NAAC</span> with A grade (3.2 out of 4.0 CGPA). 
+                    SREC is situated on NH-40, 12 KM away from
+                    Nandyal, Kurnool Dist, Andhra Pradesh. The institute is offering 06 UG Engineering and
+                    Technology (Bachelor of Technology) courses and 04 PG Engineering courses (Master of
+                    Technology) and 01 Doctoral Programs in Electronics and Communication Department apart
+                    from Master of Business Administration (MBA) and Master of Computer Applications
+                    (MCA) of JNT University, Anantapuramu. It is a learning abode for <span class="highlight achievement">2000+ Students</span>.
+                    The campus is pollution-free and its serene environment is ideally suited for academic activities.
+                    Our goal is to produce engineers and managers who can contribute to the progress of the
+                    Nation and the World through excellent scientific, technical innovations and research
+                    activities. <span class="key-point">academic excellence</span>, <span class="key-point">innovation</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Section Background */
+.info-section {
+    background: linear-gradient(135deg, #f3f3f4, #ecedee);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Card */
+.card {
+    display: flex;
+    align-items: center;
+    background: rgb(233, 230, 230);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* College Image */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.college-image {
+    width: 450px; /* Adjust width dynamically */
+    height: 100%; /* Make the image match the card height */
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.college-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 123, 255, 1);
+}
+
+/* Ensure the card adjusts accordingly */
+.card {
+    display: flex;
+    align-items: stretch; /* Ensures the image and text container stretch to equal height */
+    padding: 10px;
+}
+
+/* Text Content */
+.text-container {
+    flex: 2;
+    padding-left: 30px;
+    color: rgb(17, 18, 18);
+    text-align: justify;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Title */
+.title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #0288d1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+/* Highlighted Key Points */
+.key-point {
+    font-weight: bold;
+    color: #ff5722;
+    background: rgb(247, 246, 246);
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* Achievements Highlight */
+.highlight {
+    font-weight: bold;
+    color: #d32f2f;
+    background: rgb(247, 246, 246);
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.achievement {
+    font-weight: bold;
+    color: #4caf50;
+    background: rgb(240, 240, 240);
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* Glowing Effect for Overall Text */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(0, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.7), 0 0 15px rgba(0, 0, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 1);
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Top Entrance Animation */
+.animate-top {
+    animation: slideDown 1.2s ease-in-out;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-container {
+        margin-bottom: 20px;
+    }
+    .text-container {
+        padding-left: 0;
+    }
+    .college-image {
+        width: 140px;
+    }
+}
+</style>
 
 <!-- Event Section -->
 <!-- Event Section -->
@@ -252,7 +444,13 @@
     
     <!-- Event Description -->
     <div class="event-description" style="font-size: 20px; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto 40px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);">
-        <p style="font-weight: 600; color: #444;">SIGMA-2K25 is an annual fest that brings together the best minds in technology and creativity. This year, we offer a mix of technical and non-technical events, workshops, and challenges to enhance skills, network, and enjoy an unforgettable experience.</p>
+        <p style="font-weight: 600; color: #444;">SIGMA-2K25 is an annual fest that brings together the best minds in technology and creativity. A technical symposium brings together students with shared interests 
+            in a particular field, creating a space for them to demonstrate their 
+            knowledge, skills, and creativity. The events foster both collaboration 
+            and friendly competition, encouraging students to deliver into advanced topics, present their research, and interact with peers and experts. Attendees benefit from a range of activities, including paper 
+            presentations, project demonstrations and guest lectures, 
+            gaining valuable experience that extends beyond the traditional 
+            classroom.</p>
     </div>
 
     <!-- Event Image with Animation -->
